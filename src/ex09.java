@@ -5,7 +5,7 @@ public class ex09 {
 		int divisible;
 		while(i>=1 && i<=100) {
 			divisible=i;
-			if(divisible%2==0 || divisible%3==0) {
+			if(divisible%2==0 && divisible%3==0) {
 				System.out.print(divisible+ " ");
 			}
 			i++;

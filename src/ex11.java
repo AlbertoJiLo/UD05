@@ -6,31 +6,32 @@ public class ex11 {
 		boolean diaValido=false;
 		while(!diaValido){
 			String dia=JOptionPane.showInputDialog("¿Que dia de la semana eliges?");
-			boolean diaCheck=dia.equals("Lunes") || dia.equals("Martes") || dia.equals("Miercoles") || 
-					dia.equals("Jueves") || dia.equals("Viernes") || dia.equals("Sabado") || 
-					dia.equals("Domingo");
+			dia=dia.toLowerCase();
+			boolean diaCheck=dia.equals("lunes") || dia.equals("martes") || dia.equals("miercoles") || 
+					dia.equals("jueves") || dia.equals("viernes") || dia.equals("sabado") || 
+					dia.equals("domingo"); //Comprobamos que el dato introducido es un día de la semana
 				if(diaCheck){
 					diaValido=true;
 					switch(dia) {
-					case "Lunes":
+					case "lunes":
 						System.out.println("El " +dia+ " es laborable");
 						break;
-					case "Martes":
+					case "martes":
 						System.out.println("El " +dia+ " es laborable");
 						break;
-					case "Miercoles":
+					case "miercoles":
 						System.out.println("El " +dia+ " es laborable");
 						break;
-					case "Jueves":
+					case "jueves":
 						System.out.println("El " +dia+ " es laborable");
 						break;
-					case "Viernes":
+					case "viernes":
 						System.out.println("El " +dia+ " es laborable");
 						break;
-					case "Sabado":
+					case "sabado":
 						System.out.println("El " +dia+ " no es laborable");
 						break;
-					case "Domingo":
+					case "domingo":
 						System.out.println("El " +dia+ " no es laborable");
 						break;
 					}
